@@ -1,6 +1,6 @@
 # UltraFabric Auto Redirect
 
-➡️ [Visit the redirect page](https://thelaval.github.io/ultrafabric/)
+➡️ [Visit the redirect page](https://lavalstudio.github.io/ultrafabric/)
 
 ## 📦 What is this?
 
