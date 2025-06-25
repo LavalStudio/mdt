@@ -2,8 +2,6 @@
 
 ➡️ [Visit the redirect page](https://thelaval.github.io/ultrafabric/)
 
----
-
 ## 📦 What is this?
 
 This is a redirect page that automatically sends you to the **latest version** of **UltraFabric** on [Modrinth](https://modrinth.com/modpack/ultrafabric).
@@ -25,8 +23,6 @@ If the redirect doesn't trigger, you’ll get:
   <img src="https://github.com/user-attachments/assets/db24976d-d602-4e82-aa8c-6157c9638241" alt="Light Mode (Versions)" width="48%" />
   <img src="https://github.com/user-attachments/assets/df0b00bc-0b93-4294-8138-f87cecec88a9" alt="Dark Mode (Versions)" width="48%" />
 </p>
-
----
 
 ## 🎨 Version Color Legend
 
