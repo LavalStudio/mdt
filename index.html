@@ -22,18 +22,18 @@
       aside {
         background-color: #3a3a5a;
         padding: 1rem;
-        min-width: 220px;
-        transition: transform 0.3s ease;
-        transform: translateX(-100%);
+        width: 220px;
         position: fixed;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: -220px;
         z-index: 100;
+        transition: left 0.3s ease;
+        overflow-y: auto;
       }
 
       aside.open {
-        transform: translateX(0);
+        left: 0;
       }
 
       aside h2 {
@@ -45,10 +45,11 @@
       aside a {
         display: block;
         margin: 0.4rem 0;
-        color: white;
         text-decoration: none;
         font-weight: bold;
         transition: 0.2s;
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
       }
 
       aside a:hover {
@@ -104,20 +105,42 @@
       .toggle-btn {
         position: fixed;
         top: 1rem;
-        left: 1rem;
+        left: 0;
+        transform: translateX(220px);
         z-index: 200;
         background: #4a4a8a;
         color: white;
         border: none;
         padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
         font-weight: bold;
         cursor: pointer;
-        transition: 0.3s;
+        transition: left 0.3s ease, transform 0.3s;
       }
 
-      .toggle-btn:hover {
-        background-color: #37376d;
+      .sidebar-open .toggle-btn {
+        transform: translateX(0);
+      }
+
+      /* Color styles */
+      .release {
+        background-color: #4a90e2;
+        color: white;
+      }
+
+      .rc {
+        background-color: #27ae60;
+        color: white;
+      }
+
+      .beta {
+        background-color: #f1c40f;
+        color: black;
+      }
+
+      .alpha {
+        background-color: #e74c3c;
+        color: white;
       }
 
       @media (prefers-color-scheme: light) {
@@ -176,10 +199,12 @@
     </style>
     <script>
       function toggleSidebar() {
-        document.querySelector("aside").classList.toggle("open");
+        const aside = document.querySelector("aside");
+        const body = document.body;
+        aside.classList.toggle("open");
+        body.classList.toggle("sidebar-open");
       }
 
-      // Redirection automatique (tu peux le désactiver si tu veux garder que le bouton)
       setTimeout(() => {
         window.location.href =
           "https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack";
@@ -191,9 +216,10 @@
 
     <aside>
       <h2>📦 Versions</h2>
-      <a href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack">v1.0.0-rc1</a>
-      <a href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/XXX/UF%20-%20UltraFabric%201.0.0-beta1.mrpack">v1.0.0-beta1</a>
-      <!-- Ajoute d'autres versions ici -->
+      <a class="rc" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack">v1.0.0-rc1</a>
+      <a class="beta" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/xxxxx/UF%20-%20UltraFabric%201.0.0-beta1.mrpack">v1.0.0-beta1</a>
+      <a class="alpha" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/yyyyy/UF%20-%20UltraFabric%201.0.0-alpha.mrpack">v1.0.0-alpha</a>
+      <a class="release" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/zzzzz/UF%20-%20UltraFabric%201.0.0.mrpack">v1.0.0</a>
     </aside>
 
     <div class="main">
