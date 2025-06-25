@@ -102,25 +102,26 @@
         transform: scale(1.05);
       }
 
-      .toggle-btn {
-        position: fixed;
-        top: 1rem;
-        left: 0;
-        transform: translateX(220px);
-        z-index: 200;
-        background: #4a4a8a;
-        color: white;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 0 0.5rem 0.5rem 0;
-        font-weight: bold;
-        cursor: pointer;
-        transition: left 0.3s ease, transform 0.3s;
-      }
+.toggle-btn {
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  transform: translateX(0);
+  z-index: 200;
+  background: #4a4a8a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: left 0.3s ease, transform 0.3s;
+}
 
-      .sidebar-open .toggle-btn {
-        transform: translateX(0);
-      }
+.sidebar-open .toggle-btn {
+  transform: translateX(220px);
+}
+
 
       /* Color styles */
       .release {
