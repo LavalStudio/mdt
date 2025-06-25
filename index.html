@@ -197,6 +197,32 @@
           background-color: #2b2b4a;
         }
       }
+      .about-link {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 1000;
+}
+
+.about-link:hover {
+  color: #4a4a8a;
+}
+
+/* Dark mode tweak */
+@media (prefers-color-scheme: dark) {
+  .about-link {
+    color: #aaa;
+  }
+
+  .about-link:hover {
+    color: #b6c3ff;
+  }
+}
+
     </style>
     <script>
       function toggleSidebar() {
@@ -217,6 +243,12 @@
 
     <aside>
       <h2>📦 Versions</h2>
+      <p style="margin-bottom: 1rem; font-size: 0.9rem;">
+  <a href="https://github.com/TheLaval/ultrafabric/tree/main?tab=readme-ov-file#-version-color-legend"
+     target="_blank" style="color: inherit; text-decoration: underline;">
+    Color Legend 🌈
+  </a>
+</p>
       <a class="rc" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack">v1.0.0-rc1</a>
     </aside>
 
@@ -230,5 +262,9 @@
         </a>
       </div>
     </div>
-  </body>
+  <a href="https://github.com/TheLaval/ultrafabric/tree/main?tab=readme-ov-file#ultrafabric-auto-redirect"
+     class="about-link" target="_blank" rel="noopener noreferrer">
+    About ↗
+  </a>
+</body>
 </html>
