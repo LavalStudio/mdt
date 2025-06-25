@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta http-equiv="refresh" content="0.1; url=https://thelaval.github.io/ultrafabric/" />
-    <title>Redirecting...</title>
-    <link rel="icon" href="favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0.5; url=https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Téléchargement UltraFabric</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .card {
+        padding: 2rem 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .card h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .card p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.7rem 1.2rem;
+        background-color: #4a4a8a;
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      .card a:hover {
+        background-color: #37376d;
+        transform: scale(1.05);
+      }
+
+      /* Light Mode */
+      @media (prefers-color-scheme: light) {
+        body {
+          background: linear-gradient(135deg, #ffffff, #d0d0ff);
+          color: #222;
+        }
+
+        .card {
+          background: #fff;
+        }
+
+        .card h1 {
+          color: #4a4a8a;
+        }
+      }
+
+      /* Dark Mode */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: linear-gradient(135deg, #1a1a1a, #2a2a4a);
+          color: #eee;
+        }
+
+        .card {
+          background: #2b2b2b;
+        }
+
+        .card h1 {
+          color: #b6c3ff;
+        }
+
+        .card a {
+          background-color: #6b78e5;
+          color: white;
+        }
+
+        .card a:hover {
+          background-color: #5562c9;
+        }
+      }
+    </style>
   </head>
   <body>
-    <p>Redirecting to <a href="https://thelaval.github.io/ultrafabric/versions/">versions/</a>...</p>
+    <div class="card">
+      <h1>⏳ Downloading...</h1>
+      <p><strong>UltraFabric v1.0.0-rc1</strong> will download automatically.</p>
+      <p>If it doesn't work :</p>
+      <a href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack" download>
+        📥 Download manually
+      </a>
+    </div>
   </body>
 </html>
