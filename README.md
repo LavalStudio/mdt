@@ -1,10 +1,10 @@
-# UltraFabric Auto Redirect
+# MDT Auto Redirect
 
 ➡️ [Visit the redirect page](https://lavalstudio.github.io/ultrafabric/)
 
 ## 📦 What is this?
 
-This is a redirect page that automatically sends you to the **latest version** of **UltraFabric** on [Modrinth](https://modrinth.com/modpack/ultrafabric).
+This is a redirect page that automatically sends you to the **latest version** of **Modpack Tweaks** on [Modrinth](https://modrinth.com/modpack/mdp).
 
 If the redirect doesn't trigger, you’ll get:
 - A clean manual download button
