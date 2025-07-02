@@ -22,54 +22,113 @@
         overflow: hidden;
       }
 
-      aside {
-        background-color: #3a3a5a;
-        padding: 1rem;
-        width: 300px;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 100;
-        overflow-y: auto;
-        color: white;
-      }
+aside {
+  background-color: #3a3a5a;
+  padding: 1rem;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+  color: white;
+}
 
-      aside h2 {
-        color: #fff;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-      }
+aside h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
 
-      aside label {
-        font-weight: bold;
-        margin-top: 1rem;
-        display: block;
-      }
+aside label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
 
-      aside select {
-        width: 100%;
-        padding: 0.3rem;
-        border-radius: 4px;
-        border: none;
-        margin-top: 0.3rem;
-        font-size: 1rem;
-      }
+aside select {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: none;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  background: #555;
+  color: white;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-      aside a {
-        display: block;
-        margin: 0.4rem 0;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.2s;
-        padding: 0.3rem 0.5rem;
-        border-radius: 5px;
-        color: inherit;
-      }
+aside a {
+  display: block;
+  margin: 0.4rem 0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  color: inherit;
+}
 
-      aside a:hover {
-        text-decoration: underline;
-      }
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* LIGHT MODE */
+@media (prefers-color-scheme: light) {
+  aside {
+    background-color: #d0d0ff;
+    color: #222;
+  }
+
+  aside h2,
+  aside label {
+    color: #222;
+  }
+
+  aside select {
+    background: #fff;
+    color: #222;
+    border: 1px solid #aaa;
+  }
+
+  aside a {
+    color: #222;
+  }
+
+  aside a:hover {
+    color: #000;
+  }
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  aside {
+    background-color: #2b2b4a;
+    color: #ddd;
+  }
+
+  aside h2,
+  aside label {
+    color: #ddd;
+  }
+
+  aside select {
+    background: #444973;
+    color: #ddd;
+    border: 1px solid #666;
+  }
+
+  aside a {
+    color: #ddd;
+  }
+
+  aside a:hover {
+    color: white;
+  }
+}
+
 
       .main {
         margin-left: 300px;
