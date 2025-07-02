@@ -241,23 +241,69 @@
   <body>
     <button class="toggle-btn" onclick="toggleSidebar()">☰ Versions</button>
 
-    <aside>
-      <h2>📦 Versions</h2>
-      <p style="margin-bottom: 1rem; font-size: 0.9rem;">
-  <a href="https://github.com/LavalStudio/mdt/tree/main?tab=readme-ov-file#-version-color-legend"
-     target="_blank" style="color: inherit; text-decoration: underline;">
-    Color Legend 🌈
+<aside>
+  <h2>📦 Versions</h2>
+
+  <div style="margin-bottom: 1rem;">
+    <label>Version:</label><br />
+    <select id="filter-version">
+      <option value="">All</option>
+      <option value="1.0.0">1.0.0</option>
+    </select><br /><br />
+    
+    <label>Channel:</label><br />
+    <select id="filter-channel">
+      <option value="">All</option>
+      <option value="release">Release</option>
+      <option value="rc">Release Candidate</option>
+      <option value="beta">Beta</option>
+      <option value="alpha">Alpha</option>
+    </select><br /><br />
+    
+    <label>Minecraft:</label><br />
+    <select id="filter-mc">
+      <option value="">All</option>
+      <option value="1.21.1">1.21.1</option>
+      <option value="1.21">1.21</option>
+    </select>
+  </div>
+
+  <a
+    class="release"
+    href="https://cdn.modrinth.com/data/XdmcmT2E/versions/mQK6kluk/MDT%201.0.0%20%28MC-1.21%29.mrpack"
+    data-version="1.0.0"
+    data-channel="release"
+    data-minecraft="1.21"
+  >
+    1.0.0
   </a>
-</p>
-      <a class="rc" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack">v1.0.0-rc1</a>
-    </aside>
+  <a
+    class="release"
+    href="https://cdn.modrinth.com/data/XdmcmT2E/versions/mQK6kluk/MDT%201.0.0%20%28MC-1.21.1%29.mrpack"
+    data-version="1.0.0"
+    data-channel="release"
+    data-minecraft="1.21.1"
+  >
+    1.0.0
+  </a>
+
+  <p style="margin-top: 2rem; font-size: 0.9rem;">
+    <a
+      href="https://github.com/LavalStudio/mdt/tree/main?tab=readme-ov-file#-version-color-legend"
+      target="_blank"
+      style="color: inherit; text-decoration: underline;"
+    >
+      🌈 Color Legend
+    </a>
+  </p>
+</aside>
 
     <div class="main">
       <div class="card">
         <h1>⏳ Downloading...</h1>
         <p><strong>UltraFabric v1.0.0-rc1</strong> will download automatically.</p>
         <p>If it doesn't work :</p>
-        <a class="button" href="https://cdn.modrinth.com/data/nQ7DS4lu/versions/UnojqZiS/UF%20-%20UltraFabric%201.0.0-rc1.mrpack" download>
+        <a class="button" href="https://cdn.modrinth.com/data/XdmcmT2E/versions/4kzZFTUt/MDT%201.0.0%20%28MC-1.21.1%29.mrpack" download>
           📥 Download manually
         </a>
       </div>
