@@ -1,6 +1,6 @@
 # MDT Auto Redirect
 
-➡️ [Visit the redirect page](https://lavalstudio.github.io/ultrafabric/)
+➡️ [Visit the redirect page](https://lavalstudio.github.io/mdt/)
 
 ## 📦 What is this?
 
