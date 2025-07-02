@@ -2,27 +2,13 @@
 
 ➡️ [Visit the redirect page](https://lavalstudio.github.io/mdt/)
 
-## 📦 What is this?
-
-This is a redirect page that automatically sends you to the **latest version** of **Modpack Tweaks** on [Modrinth](https://modrinth.com/modpack/mdp).
-
-If the redirect doesn't trigger, you’ll get:
-- A clean manual download button
-- A sidebar with **all versions** (Release, RC, Beta, Alpha)
-- Dark & light theme auto-detection based on your system
-
----
-
-## 🖼️ Appearance (Dark / Light)
+## 🖼️ Appearance (Light / Dark)
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/94a5004e-6da6-46ff-be63-9ed54e333ee2" alt="Light Mode (Downloading...)" width="48%" />
-  <img src="https://github.com/user-attachments/assets/7c5e61d7-cbe4-44c5-b624-fcb7228eef87" alt="Dark Mode (Downloading...)" width="48%" />
+  <img src="https://github.com/user-attachments/assets/4464a787-b270-4718-8d65-df080cb66768" alt="ark Mode (Downloading...)" width="48%" />
+  <img src="https://github.com/user-attachments/assets/0674bf62-9058-4855-9ab3-a1a21316471c" alt="Dark Mode (Downloading...)" width="48%" />
 </p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/db24976d-d602-4e82-aa8c-6157c9638241" alt="Light Mode (Versions)" width="48%" />
-  <img src="https://github.com/user-attachments/assets/df0b00bc-0b93-4294-8138-f87cecec88a9" alt="Dark Mode (Versions)" width="48%" />
-</p>
+
 
 ## 🎨 Version Color Legend
 
@@ -32,5 +18,3 @@ If the redirect doesn't trigger, you’ll get:
 | 🟢 Release Candidate (RC) | Green    | Almost stable, awaiting final validation             |
 | 🟡 Beta            | Gold/Yellow      | Test builds with potential bugs, feedback welcome    |
 | 🔴 Alpha           | Red              | Early preview, experimental and unstable             |
-
-> Hover on version entries to see link previews and quickly download specific builds.
